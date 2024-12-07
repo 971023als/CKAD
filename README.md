@@ -1,41 +1,74 @@
 # CKAD 학습 자료 및 도구
 
-이 저장소는 **CKAD(Certified Kubernetes Application Developer)** 자격증 시험 준비를 위한 학습 자료, 실습 환경 설정, 연습 문제, 스터디 노트를 제공합니다. Kubernetes 애플리케이션 개발에 필요한 필수 개념과 실습 환경을 구성하여 효율적인 시험 준비를 지원합니다.
+## 📚 학습 자료
+1. **공식 문서**
+   - [Kubernetes Documentation](https://kubernetes.io/docs/)
+   - [CKAD Curriculum](https://github.com/cncf/curriculum)
+2. **유튜브 강의**
+   - [FreeCodeCamp Kubernetes for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do)
+   - [TechWorld with Nana - Kubernetes Tutorials](https://www.youtube.com/c/TechWorldwithNana)
+3. **온라인 강의**
+   - [Udemy - Certified Kubernetes Application Developer (CKAD)](https://www.udemy.com/course/certified-kubernetes-application-developer/)
+   - [KodeKloud CKAD Course](https://kodekloud.com/courses/)
+4. **연습 플랫폼**
+   - [Kubernetes Playground (Katacoda)](https://www.katacoda.com/courses/kubernetes/playground)
+   - [Play with Kubernetes](https://labs.play-with-k8s.com/)
 
-## 목차
-- [개요](#개요)
-- [주요 기능](#주요-기능)
-- [시스템 요구사항](#시스템-요구사항)
-- [설치 방법](#설치-방법)
-- [사용법](#사용법)
-- [디렉토리 구조](#디렉토리-구조)
-- [기여 방법](#기여-방법)
-- [라이선스](#라이선스)
+---
 
-## 개요
+## 🛠️ 필수 도구
+1. **로컬 환경 설정**
+   - Docker: [설치 가이드](https://docs.docker.com/get-docker/)
+   - Minikube: [설치 가이드](https://minikube.sigs.k8s.io/docs/start/)
+   - Kind (Kubernetes in Docker): [설치 가이드](https://kind.sigs.k8s.io/docs/user/quick-start/)
+2. **CLI 도구**
+   - `kubectl`: [설치 가이드](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+   - `helm`: [설치 가이드](https://helm.sh/docs/intro/install/)
+   - `k9s`: [k9s 설치 가이드](https://k9scli.io/)
+3. **추가 도구**
+   - Lens: [설치 가이드](https://k8slens.dev/)
+   - Octant: [설치 가이드](https://octant.dev/)
 
-CKAD는 Kubernetes에서 애플리케이션을 설계, 구성, 그리고 디버깅하는 데 필요한 지식을 검증하는 자격증입니다. 이 저장소는 시험 준비를 위한 다음 자료를 제공합니다:
-- Kubernetes 기본 및 고급 개념 정리
-- 실전 연습을 위한 YAML 템플릿과 스크립트
-- CKAD 시험과 유사한 연습 문제
-- Kubernetes 클러스터 실습 환경 설정
+---
 
-## 주요 기능
-- **학습 자료**: CKAD 시험 영역별 요약 및 학습 가이드
-- **연습 문제**: 실전과 유사한 문제와 풀이
-- **환경 설정**: Kubernetes 클러스터 실습 환경 자동 설정 스크립트
-- **실습 도구**: 애플리케이션 배포 및 디버깅 자동화 스크립트
-- **시험 대비 팁**: 빠른 작업을 위한 명령어와 활용 방법
+## 📝 학습 팁
+- CKAD 시험은 CLI 속도가 중요하므로, 아래와 같은 팁을 연습하세요:
+  - `kubectl` 명령어 자동완성 설정
+  - YAML 파일을 빠르게 작성하는 방법 숙지
+  - 네임스페이스 관리 능력 향상 (`kubectl config set-context`)
+- [Mock Exam 연습](https://killer.sh/)을 통해 시험 환경에 익숙해지세요.
 
-## 시스템 요구사항
-- Kubernetes 클러스터 (Minikube 또는 Kind 권장)
-- Docker 20.x 이상
-- kubectl 1.20 이상
-- Python 3.8 이상 (선택 사항: 스크립트 실행용)
+---
 
-## 설치 방법
+## 📑 CKAD 관련 GitHub 리소스
+1. [CKAD Study Guide](https://github.com/dgkanatsios/CKAD-exercises)
+2. [Kubernetes Examples](https://github.com/kubernetes/examples)
+3. [CKAD Killer.sh Review](https://github.com/gyohung/kubernetes-ckad)
 
-1. **저장소 클론**
-   ```bash
-   git clone https://github.com/username/ckad-study.git
-   cd ckad-study
+---
+
+## 📅 학습 플랜
+| 주차  | 학습 목표                          | 비고                         |
+|-------|-----------------------------------|------------------------------|
+| 1주차 | Kubernetes 기본 개념 익히기       | Pods, Deployments, Services |
+| 2주차 | ConfigMaps와 Secrets 학습          |                              |
+| 3주차 | Volumes 및 Persistent Volumes 학습 |                              |
+| 4주차 | 네트워킹 및 네임스페이스 관리      |                              |
+| 5주차 | Mock Exam 및 복습                 |                              |
+
+---
+
+## 📌 참고 링크
+- [Kubernetes Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [Awesome Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+- [CKAD Practice Questions](https://kodekloud.com/courses/)
+
+---
+
+## 💬 문의 및 토론
+- CKAD 관련 질문은 [Kubernetes Slack Channel](https://slack.k8s.io/)에서 나눠보세요.
+- 추가 자료 요청이나 문의 사항은 GitHub Issue를 통해 남겨주세요.
+
+---
+
+### 작성자: **[Your Name]**
